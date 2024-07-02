@@ -7,7 +7,8 @@
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 <script>
     const root = document.getElementById("root");
-    const span = React.createElement("span", {id: "new-span"}, "Hello World");
+    const span = React.createElement("span", {id: "new-span" ,style: {color : 'red'}}, "Hello World");
+    //createElement()의 첫번쨰 argument는 HTML 태그, 두번째는 property가 들어간다. {}안에 id, style 같은 것들도 넣을 수 있다.
     ReactDOM.render(span, root)
 </script>
 </html>
